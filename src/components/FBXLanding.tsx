@@ -29,11 +29,22 @@ export function FBXLanding() {
                 <span className="text-[10px] md:text-xs font-mono uppercase tracking-widest text-muted-foreground">Система [1.0] Активна</span>
               </div>
               
-              <h1 className="text-3xl sm:text-4xl md:text-6xl lg:text-7xl font-semibold tracking-[-0.02em] leading-[0.95] mb-8 md:mb-12 animate-in fade-in slide-in-from-bottom-8 duration-1000 delay-100">
-                <span className="block">МЫ СОЗДАЕМ</span>
-                <span className="block mt-1 md:mt-2">
-                  <span className="font-light italic text-muted-foreground mr-1 md:mr-3 tracking-normal">ЦИФРОВОЙ</span>
-                  <span className="block sm:inline">ИНТЕЛЛЕКТ</span>
+              <h1 className="text-3xl sm:text-4xl md:text-7xl lg:text-8xl font-semibold tracking-[-0.02em] leading-[0.95] md:leading-[0.9] mb-8 md:mb-12 animate-in fade-in slide-in-from-bottom-8 duration-1000 delay-100">
+                {/* Mobile version */}
+                <span className="block md:hidden">
+                  <span className="block">МЫ СОЗДАЕМ</span>
+                  <span className="block mt-1">
+                    <span className="font-light italic text-muted-foreground mr-1 tracking-normal">ЦИФРОВОЙ</span>
+                  </span>
+                  <span className="block">ИНТЕЛЛЕКТ</span>
+                </span>
+                {/* Desktop version */}
+                <span className="hidden md:block">
+                  МЫ СОЗДАЕМ <br/>
+                  <span className="block ml-12 lg:ml-20">
+                    <span className="font-light italic text-muted-foreground mr-4 tracking-normal">ЦИФРОВОЙ</span>
+                    ИНТЕЛЛЕКТ
+                  </span>
                 </span>
               </h1>
               

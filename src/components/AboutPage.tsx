@@ -18,11 +18,22 @@ export function AboutPage() {
                  <span className="w-2 h-2 rounded-full bg-foreground"></span>
                  <span className="text-xs font-mono uppercase tracking-widest text-muted-foreground">EST. 2023</span>
               </div>
-              <h1 className="text-3xl sm:text-4xl md:text-6xl lg:text-7xl font-semibold tracking-[-0.02em] leading-[0.95] mb-12">
-                <span className="block">МЫ —</span>
-                <span className="block mt-1 md:mt-2">
-                  <span className="font-light italic text-muted-foreground mr-1 md:mr-3 tracking-normal">ИНЖЕНЕРЫ</span>
-                  <span className="block sm:inline">БУДУЩЕГО</span>
+              <h1 className="text-3xl sm:text-4xl md:text-7xl lg:text-8xl font-semibold tracking-[-0.02em] leading-[0.95] md:leading-[0.9] mb-12">
+                {/* Mobile version */}
+                <span className="block md:hidden">
+                  <span className="block">МЫ —</span>
+                  <span className="block mt-1">
+                    <span className="font-light italic text-muted-foreground mr-1 tracking-normal">ИНЖЕНЕРЫ</span>
+                  </span>
+                  <span className="block">БУДУЩЕГО</span>
+                </span>
+                {/* Desktop version */}
+                <span className="hidden md:block">
+                  МЫ — <br/>
+                  <span className="block ml-12 lg:ml-20">
+                    <span className="font-light italic text-muted-foreground mr-4 tracking-normal">ИНЖЕНЕРЫ</span>
+                    БУДУЩЕГО
+                  </span>
                 </span>
               </h1>
               
