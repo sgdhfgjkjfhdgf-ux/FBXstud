@@ -3,7 +3,7 @@ import { defineConfig } from 'vite';
   import path from 'path';
 
   export default defineConfig({
-    base: './',
+    base: '/FBXstud/',
     plugins: [react()],
     resolve: {
       extensions: ['.js', '.jsx', '.ts', '.tsx', '.json'],
