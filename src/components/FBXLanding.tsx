@@ -42,7 +42,7 @@ export function FBXLanding() {
                 <span className="hidden md:block">
                   МЫ СОЗДАЕМ <br/>
                   <span className="block ml-12 lg:ml-20">
-                    <span className="font-light italic text-muted-foreground mr-10 tracking-normal">ЦИФРОВОЙ</span>
+                    <span className="font-light italic text-muted-foreground mr-14 tracking-normal">ЦИФРОВОЙ</span>
                     ИНТЕЛЛЕКТ
                   </span>
                 </span>
