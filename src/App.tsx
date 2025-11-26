@@ -5,7 +5,7 @@ import { AboutPage } from "./components/AboutPage";
 
 export default function App() {
   return (
-    <Router>
+    <Router basename="/FBXstud">
       <Routes>
         <Route path="/" element={<FBXLanding />} />
         <Route path="/cases" element={<CasesPage />} />
