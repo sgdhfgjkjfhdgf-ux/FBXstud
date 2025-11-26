@@ -9,16 +9,16 @@ export function AboutPage() {
     <div className="min-h-screen bg-background text-foreground font-sans selection:bg-foreground selection:text-background flex flex-col">
       <Header />
       
-      <main className="flex-1 pt-20">
+      <main className="flex-1 pt-16 md:pt-20">
         {/* Hero */}
-        <section className="py-20 md:py-32 border-b border-border">
+        <section className="py-12 md:py-32 border-b border-border">
           <div className="container mx-auto px-4 md:px-6">
             <div className="max-w-5xl">
-              <div className="inline-flex items-center gap-2 border border-border rounded-full px-3 py-1 mb-6 bg-secondary/30">
+              <div className="inline-flex items-center gap-2 border border-border rounded-full px-3 py-1 mb-4 md:mb-6 bg-secondary/30">
                  <span className="w-2 h-2 rounded-full bg-foreground"></span>
                  <span className="text-xs font-mono uppercase tracking-widest text-muted-foreground">EST. 2023</span>
               </div>
-              <h1 className="text-3xl sm:text-4xl md:text-7xl lg:text-8xl font-semibold tracking-[-0.02em] leading-[0.95] md:leading-[0.9] mb-12">
+              <h1 className="text-3xl sm:text-4xl md:text-7xl lg:text-8xl font-semibold tracking-[-0.02em] leading-[0.95] md:leading-[0.9] mb-8 md:mb-12">
                 {/* Mobile version */}
                 <span className="block md:hidden">
                   <span className="block">МЫ —</span>
@@ -37,7 +37,7 @@ export function AboutPage() {
                 </span>
               </h1>
               
-              <div className="grid md:grid-cols-2 gap-12 text-lg md:text-xl leading-relaxed text-muted-foreground">
+              <div className="grid md:grid-cols-2 gap-6 md:gap-12 text-base md:text-xl leading-relaxed text-muted-foreground">
                 <p>
                   FBX Studio — это команда разработчиков, дизайнеров и AI-энтузиастов. Мы не просто пишем код, мы создаем цифровые продукты, которые меняют правила игры в бизнесе.
                 </p>
@@ -58,29 +58,29 @@ export function AboutPage() {
                { icon: Globe, title: "МАСШТАБ", desc: "Решения, готовые к высоким нагрузкам и росту." },
                { icon: Check, title: "КАЧЕСТВО", desc: "Pixel-perfect верстка и чистый, поддерживаемый код." }
              ].map((item, i) => (
-               <div key={i} className="p-8 md:p-12 hover:bg-secondary/10 transition-colors">
-                  <item.icon className="size-10 mb-6 opacity-50" />
-                  <h3 className="text-xl font-medium mb-3">{item.title}</h3>
-                  <p className="text-muted-foreground">{item.desc}</p>
+               <div key={i} className="p-6 md:p-12 hover:bg-secondary/10 transition-colors">
+                  <item.icon className="size-8 md:size-10 mb-4 md:mb-6 opacity-50" />
+                  <h3 className="text-lg md:text-xl font-medium mb-2 md:mb-3">{item.title}</h3>
+                  <p className="text-muted-foreground text-sm md:text-base">{item.desc}</p>
                </div>
              ))}
           </div>
         </section>
 
         {/* Manifesto or Big Text */}
-        <section className="py-20 md:py-40 bg-foreground text-background relative overflow-hidden">
+        <section className="py-12 md:py-40 bg-foreground text-background relative overflow-hidden">
            <div className="absolute inset-0 opacity-20 bg-[url('https://grainy-gradients.vercel.app/noise.svg')]"></div>
            <div className="container mx-auto px-4 md:px-6 relative z-10">
-              <h2 className="text-2xl md:text-4xl font-medium max-w-4xl leading-tight mx-auto text-center">
+              <h2 className="text-xl md:text-4xl font-medium max-w-4xl leading-tight mx-auto text-center">
                 "Мы стремимся к тому, чтобы технологии не усложняли жизнь, а делали её проще, прозрачнее и эффективнее. Каждый наш проект — это шаг к этой цели."
               </h2>
            </div>
         </section>
 
         {/* Stats */}
-        <section className="py-20 md:py-32">
+        <section className="py-12 md:py-32">
            <div className="container mx-auto px-4 md:px-6">
-              <div className="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+              <div className="grid grid-cols-2 md:grid-cols-4 gap-6 md:gap-8 text-center">
                  {[
                    { val: "50+", label: "Проектов" },
                    { val: "3", label: "Года на рынке" },
@@ -88,8 +88,8 @@ export function AboutPage() {
                    { val: "24/7", label: "Поддержка" }
                  ].map((stat, i) => (
                    <div key={i}>
-                      <div className="text-5xl md:text-7xl font-medium tracking-tighter mb-2">{stat.val}</div>
-                      <div className="text-sm font-mono uppercase text-muted-foreground">{stat.label}</div>
+                      <div className="text-4xl md:text-7xl font-medium tracking-tighter mb-1 md:mb-2">{stat.val}</div>
+                      <div className="text-xs md:text-sm font-mono uppercase text-muted-foreground">{stat.label}</div>
                    </div>
                  ))}
               </div>
